@@ -121,15 +121,14 @@ header nav ul li a.btn-kontak:hover {
     font-size: 1.25rem;
 }
 
-/* --- Galeri (CSS Grid) --- */
+/* --- Galeri (CSS Grid) - GAYA DIPERBARUI --- */
 .galeri {
     background-color: #f9f9f9; /* Memberi background abu-abu muda */
 }
 .gallery-grid {
     display: grid;
-    /* Ini adalah kode yang membuat 3 kolom di layar lebar */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px; 
+    gap: 20px; /* Tambah gap */
     grid-auto-flow: dense;
 }
 
@@ -155,7 +154,7 @@ header nav ul li a.btn-kontak:hover {
     transform: scale(1.05);
 }
 
-/* GAYA INFO DI BAWAH FOTO */
+/* GAYA BARU UNTUK INFO DI BAWAH FOTO */
 .gallery-info {
     padding: 20px;
 }
@@ -170,9 +169,18 @@ header nav ul li a.btn-kontak:hover {
     margin-bottom: 5px;
 }
 
+
+/* Opsi untuk membuat beberapa gambar lebih menonjol */
+.gallery-item.large-h {
+    grid-column: span 2;
+}
+.gallery-item.large-v {
+    grid-row: span 2;
+}
+
 /* --- Bagian Tentang --- */
 .tentang {
-    background: #fff;
+    background: #fff; /* Ganti jadi putih */
     text-align: center;
 }
 .tentang p {
@@ -181,7 +189,7 @@ header nav ul li a.btn-kontak:hover {
 
 /* --- Bagian Tim --- */
 .tim {
-    background: #f9f9f9; 
+    background: #f9f9f9; /* Ganti background */
 }
 .tim-container {
     display: flex;
