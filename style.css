@@ -121,42 +121,66 @@ header nav ul li a.btn-kontak:hover {
     font-size: 1.25rem;
 }
 
-/* --- Galeri (CSS Grid) --- */
+/* --- Galeri (CSS Grid) - GAYA DIPERBARUI --- */
+.galeri {
+    background-color: #f9f9f9; /* Memberi background abu-abu muda */
+}
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 15px;
-    grid-auto-flow: dense; /* Membuat grid lebih rapat */
+    gap: 20px; /* Tambah gap */
+    grid-auto-flow: dense;
 }
 
 .gallery-item {
-    overflow: hidden;
+    background: #fff; /* Kartu jadi putih */
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    overflow: hidden; /* Penting untuk radius */
+}
+
+.image-container {
+    overflow: hidden; /* Untuk efek zoom */
 }
 
 .gallery-item img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     transition: transform 0.4s ease;
 }
 
-.gallery-item img:hover {
+.gallery-item:hover img {
     transform: scale(1.05);
 }
 
+/* GAYA BARU UNTUK INFO DI BAWAH FOTO */
+.gallery-info {
+    padding: 20px;
+}
+.gallery-info h4 {
+    font-size: 1.25rem;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+.gallery-info p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+
 /* Opsi untuk membuat beberapa gambar lebih menonjol */
 .gallery-item.large-h {
-    grid-column: span 2; /* Memanjang horizontal */
+    grid-column: span 2;
 }
 .gallery-item.large-v {
-    grid-row: span 2; /* Memanjang vertikal */
+    grid-row: span 2;
 }
 
 /* --- Bagian Tentang --- */
 .tentang {
-    background: #f9f9f9;
+    background: #fff; /* Ganti jadi putih */
     text-align: center;
 }
 .tentang p {
@@ -164,11 +188,14 @@ header nav ul li a.btn-kontak:hover {
 }
 
 /* --- Bagian Tim --- */
+.tim {
+    background: #f9f9f9; /* Ganti background */
+}
 .tim-container {
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap; /* Agar responsif */
+    flex-wrap: wrap;
 }
 
 .tim-card {
@@ -179,7 +206,7 @@ header nav ul li a.btn-kontak:hover {
 .tim-card img {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* Membuat foto profil bulat */
+    border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
 }
