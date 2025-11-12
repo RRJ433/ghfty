@@ -121,26 +121,26 @@ header nav ul li a.btn-kontak:hover {
     font-size: 1.25rem;
 }
 
-/* --- Galeri (CSS Grid) - GAYA DIPERBARUI --- */
+/* --- Galeri (CSS Grid) --- */
 .galeri {
-    background-color: #f9f9f9; /* Memberi background abu-abu muda */
+    background-color: #f9f9f9; 
 }
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px; /* Tambah gap */
+    gap: 20px; 
     grid-auto-flow: dense;
 }
 
 .gallery-item {
-    background: #fff; /* Kartu jadi putih */
+    background: #fff; 
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    overflow: hidden; /* Penting untuk radius */
+    overflow: hidden; 
 }
 
 .image-container {
-    overflow: hidden; /* Untuk efek zoom */
+    overflow: hidden; 
 }
 
 .gallery-item img {
@@ -154,7 +154,7 @@ header nav ul li a.btn-kontak:hover {
     transform: scale(1.05);
 }
 
-/* GAYA BARU UNTUK INFO DI BAWAH FOTO */
+/* GAYA INFO DI BAWAH FOTO */
 .gallery-info {
     padding: 20px;
 }
@@ -169,18 +169,17 @@ header nav ul li a.btn-kontak:hover {
     margin-bottom: 5px;
 }
 
-
-/* Opsi untuk membuat beberapa gambar lebih menonjol */
-.gallery-item.large-h {
-    grid-column: span 2;
-}
-.gallery-item.large-v {
-    grid-row: span 2;
+/* GAYA BARU UNTUK DESKRIPSI */
+.gallery-info .deskripsi {
+    font-style: italic;
+    color: #888;
+    font-size: 0.9rem;
+    margin-top: 10px; /* Memberi jarak dari nomor telepon */
 }
 
 /* --- Bagian Tentang --- */
 .tentang {
-    background: #fff; /* Ganti jadi putih */
+    background: #fff; 
     text-align: center;
 }
 .tentang p {
@@ -189,7 +188,7 @@ header nav ul li a.btn-kontak:hover {
 
 /* --- Bagian Tim --- */
 .tim {
-    background: #f9f9f9; /* Ganti background */
+    background: #f9f9f9; 
 }
 .tim-container {
     display: flex;
